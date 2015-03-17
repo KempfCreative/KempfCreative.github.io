@@ -1,0 +1,164 @@
+ @import "compass/reset";
+ @import "fonts";
+ @import "variables";
+
+// Layout CSS
+* {
+    box-sizing: border-box;
+}
+body {
+    background: $bodyBg;
+}
+//----Logo
+.icon-logo {
+    display: inline-block;
+    width: 9em;
+    height: 12em;
+    background: $logoBg;
+    padding:0.5em;
+    text-decoration: none;
+    .logo-text {
+        font-family: 'BilboSwashCaps';
+        color: $bodyBg;
+        font-size:1.3em;
+        line-height: 1.25em;
+        font-style: normal;
+        text-align: center;
+        &_hard {
+            display: inline-block;
+            font-family: 'Imprima-Regular';
+            font-size: 2em;
+            margin-top: 0.2em;
+        }
+    }
+}
+//----Nav
+.container-navigation {
+    float: left;
+    position: fixed;
+    width: 9em;
+    height: 100vh;
+    background: $sidebarBg;
+    &_hidden {
+        width:0em;
+    }
+}
+.feature-content_list {
+    display: block;
+    padding: 1em 0.2em 0 0.2em;
+    .list-item {
+        font-family: 'Imprima-Regular';
+        color:$cFontMain;
+        font-size: 0.9em;
+        padding:0.2em 0 0.2em 0;
+        margin: 1em 0;
+        a {
+            color:$cFontMain;
+            text-decoration: none;
+            &:active {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//----Article
+.container-article {
+    &_main {
+        display: inline-block;
+        float: left;
+        margin-left: 9em;
+        padding:1em;
+    }
+    &_secondary {
+        display: inline-block;
+        float: left;
+        margin-left: 9em;
+        padding:1em;
+    }
+}
+.article-feature {
+    display: inline-block;
+    width: 100%;
+    .image-container {
+        float: left;
+        display: inline-block;
+        .image {
+            width:100%;
+            height:auto;
+            display: inline-block;
+        }
+    }
+}
+.article-blurb {
+    display: inline-block;
+    width: 100%;
+    .image-container {
+        float: left;
+        display: inline-block;
+        .image {
+            width:100%;
+            height:auto;
+            display: inline-block;
+        }
+    }
+}
+
+//----Typography
+.text-main_centered {
+    display: inline-block;
+    font-family: 'Imprima-Regular';
+    color: $cFontAccent;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid $cFontAccent;
+    margin: 0 auto 1em auto;
+    padding: 0 0 .5em 0;
+}
+.text-secondary_centered {
+    display: inline-block;
+    font-family: 'Imprima-Regular';
+    color: $cFontAccent;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid $cFontAccent;
+    margin: 0 auto 1em auto;
+    padding: 0 0 .5em 0;
+}
+time {
+        float: left;
+        display: block;
+        color:$cFontMain;
+        font-size: .5em;
+        text-transform: uppercase;
+        margin: 0 0 0 1%;
+    }
+.heading-article {
+    a {
+        display: inline-block;
+        float: left;
+        font-size: 3em;
+        font-family: "BilboSwashCaps";
+        line-height: 1.25em;
+        color:$cFontMain;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: none;
+        letter-spacing: 1px;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        padding: 0px 0px 5px 0px;
+        margin: 0 0 0 1%;
+        vertical-align: baseline;
+        text-decoration: none;
+        width:95%;
+    }
+}
+.body-article {
+    font-size: 1.25em;
+    line-height: 1.6em;
+    margin: 0 0 1.6em 0;
+    color: $cFontMain;
+    font-family: 'Imprima-Regular';
+    font-weight: 400;
+    font-style: normal;
+}

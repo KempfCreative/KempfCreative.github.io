@@ -1,0 +1,18 @@
+@import "compass/css3/font-face";
+
+@include font-face(
+    'BilboSwashCaps',
+    font-files(
+        '../fonts/BilboSwashCaps-Regular-webfont.woff', woff,
+        '../fonts/BilboSwashCaps-Regular-webfont.ttf', ttf,
+        '../fonts/BilboSwashCaps-Regular-webfont.svg', svg
+    ), '../fonts/BilboSwashCaps-Regular-webfont.eot'
+);
+@include font-face(
+    'Imprima-Regular',
+    font-files(
+        '../fonts/Imprima-Regular-webfont.woff', woff,
+        '../fonts/Imprima-Regular-webfont.ttf', ttf,
+        '../fonts/Imprima-Regular-webfont.svg', svg
+    ), '../fonts/Imprima-Regular-webfont.eot'
+);

@@ -1,0 +1,88 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+@font-face { font-family: "BilboSwashCaps"; src: url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.eot?1426582922'); src: url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.eot?&1426582922#iefix') format('embedded-opentype'), url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.woff?1426582922') format('woff'), url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.ttf?1426582922') format('truetype'), url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.svg?1426582922') format('svg'); }
+@font-face { font-family: "Imprima-Regular"; src: url('../fonts/../fonts/Imprima-Regular-webfont.eot?1426582922'); src: url('../fonts/../fonts/Imprima-Regular-webfont.eot?&1426582922#iefix') format('embedded-opentype'), url('../fonts/../fonts/Imprima-Regular-webfont.woff?1426582922') format('woff'), url('../fonts/../fonts/Imprima-Regular-webfont.ttf?1426582922') format('truetype'), url('../fonts/../fonts/Imprima-Regular-webfont.svg?1426582922') format('svg'); }
+/* line 6, ../sass/style.scss */
+* { box-sizing: border-box; }
+
+/* line 9, ../sass/style.scss */
+body { background: #252525; }
+
+/* line 13, ../sass/style.scss */
+.icon-logo { display: inline-block; width: 9em; height: 12em; background: #D4D4D4; padding: 0.5em; text-decoration: none; }
+/* line 20, ../sass/style.scss */
+.icon-logo .logo-text { font-family: 'BilboSwashCaps'; color: #252525; font-size: 1.3em; line-height: 1.25em; font-style: normal; text-align: center; }
+/* line 27, ../sass/style.scss */
+.icon-logo .logo-text_hard { display: inline-block; font-family: 'Imprima-Regular'; font-size: 2em; margin-top: 0.2em; }
+
+/* line 36, ../sass/style.scss */
+.container-navigation { float: left; position: fixed; width: 9em; height: 100vh; background: #535353; }
+/* line 42, ../sass/style.scss */
+.container-navigation_hidden { width: 0em; }
+
+/* line 46, ../sass/style.scss */
+.feature-content_list { display: block; padding: 1em 0.2em 0 0.2em; }
+/* line 49, ../sass/style.scss */
+.feature-content_list .list-item { font-family: 'Imprima-Regular'; color: #c2c2c2; font-size: 0.9em; padding: 0.2em 0 0.2em 0; margin: 1em 0; }
+/* line 55, ../sass/style.scss */
+.feature-content_list .list-item a { color: #c2c2c2; text-decoration: none; }
+/* line 58, ../sass/style.scss */
+.feature-content_list .list-item a:active { text-decoration: underline; }
+
+/* line 66, ../sass/style.scss */
+.container-article_main { display: inline-block; float: left; margin-left: 9em; padding: 1em; }
+/* line 72, ../sass/style.scss */
+.container-article_secondary { display: inline-block; float: left; margin-left: 9em; padding: 1em; }
+
+/* line 79, ../sass/style.scss */
+.article-feature { display: inline-block; width: 100%; }
+/* line 82, ../sass/style.scss */
+.article-feature .image-container { float: left; display: inline-block; }
+/* line 85, ../sass/style.scss */
+.article-feature .image-container .image { width: 100%; height: auto; display: inline-block; }
+
+/* line 92, ../sass/style.scss */
+.article-blurb { display: inline-block; width: 100%; }
+/* line 95, ../sass/style.scss */
+.article-blurb .image-container { float: left; display: inline-block; }
+/* line 98, ../sass/style.scss */
+.article-blurb .image-container .image { width: 100%; height: auto; display: inline-block; }
+
+/* line 107, ../sass/style.scss */
+.text-main_centered { display: inline-block; font-family: 'Imprima-Regular'; color: #f24f4f; text-align: center; width: 100%; border-bottom: 1px solid #f24f4f; margin: 0 auto 1em auto; padding: 0 0 .5em 0; }
+
+/* line 117, ../sass/style.scss */
+.text-secondary_centered { display: inline-block; font-family: 'Imprima-Regular'; color: #f24f4f; text-align: center; width: 100%; border-bottom: 1px solid #f24f4f; margin: 0 auto 1em auto; padding: 0 0 .5em 0; }
+
+/* line 127, ../sass/style.scss */
+time { float: left; display: block; color: #c2c2c2; font-size: .5em; text-transform: uppercase; margin: 0 0 0 1%; }
+
+/* line 136, ../sass/style.scss */
+.heading-article a { display: inline-block; float: left; font-size: 3em; font-family: "BilboSwashCaps"; line-height: 1.25em; color: #c2c2c2; font-weight: 400; font-style: normal; text-transform: none; letter-spacing: 1px; border-width: 0px 0px 1px 0px; border-style: solid; padding: 0px 0px 5px 0px; margin: 0 0 0 1%; vertical-align: baseline; text-decoration: none; width: 95%; }
+
+/* line 156, ../sass/style.scss */
+.body-article { font-size: 1.25em; line-height: 1.6em; margin: 0 0 1.6em 0; color: #c2c2c2; font-family: 'Imprima-Regular'; font-weight: 400; font-style: normal; }

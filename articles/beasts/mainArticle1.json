@@ -3,7 +3,7 @@
         "articleImage":"<figure class=\"image-container\"><img src=\"/images/b1-S.jpg\" alt=\"\" class=\"image\" /></figure>",
         "articleTime":"<time xsi:type=\"xsd:date\" datetime=\"2015-03-16\" title=\"\" pubdate=\"pubdate\">March 16, 2015</time>",
         "articleHeading":"<h2 class=\"heading-article\"><a class=\"\" href=\"#\">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>",
-        "articleBody":"<p class=\"body-article\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio commodi, exercitationem sint, est incidunt dolore enim provident, alias totam asperiores inventore numquam ipsam! Recusandae itaque architecto ea, qui rem.</p>"
+        "articleBody":"<p class=\"body-article\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio commodi, exercitationem sint, est incidunt dolore enim provident, alias totam asperiores inventore numquam ipsam! Recusandae itaque architecto ea, qui rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio commodi, exercitationem sint, est incidunt dolore enim provident, alias totam asperiores inventore numquam ipsam! Recusandae itaque architecto ea, qui rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio commodi, exercitationem sint, est incidunt dolore enim provident, alias totam asperiores inventore numquam ipsam! Recusandae itaque architecto ea, qui rem.</p>"
     },
     "error": {
         "responseHTML":""

@@ -1,0 +1,19 @@
+@mixin headingPreset {
+    display: inline-block;
+    float: left;
+    font-family: "BilboSwashCaps";
+    color:$cFontMain;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 1px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    padding: 0px 0px 5px 0px;
+    margin: 2em 0 0 1%;
+    @media screen and (min-width: 768px) {
+        margin: 0 0 0 1%;
+    }
+    vertical-align: baseline;
+    text-decoration: none;
+}

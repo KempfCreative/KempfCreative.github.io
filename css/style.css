@@ -61,8 +61,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .signature-line {
   stroke-dasharray: 1583;
-  animation: signatureWrite 3s infinite linear;
-  -webkit-animation: signatureWrite 3s infinite linear;
+  animation: signatureWrite 3s infinite cubic-bezier(0.4, 0, 1, 1);
+  -webkit-animation: signatureWrite 3s infinite cubic-bezier(0.4, 0, 1, 1);
 }
 
 .reference {
@@ -114,4 +114,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   100% {
     stroke-dashoffset: 0;
   }
+}
+
+.optimized {
+  fill: red;
+  display: block;
+  margin: 0 auto;
+}
+
+.non-optimized {
+  display: block;
+  margin:0 auto;
+}
+
+.optimized path {
+  fill: red;
 }

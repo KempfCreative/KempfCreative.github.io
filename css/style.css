@@ -24,115 +24,94 @@ a img { border: none; }
 /* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-@font-face { font-family: "BilboSwashCaps"; src: url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.eot?1426590666'); src: url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.eot?&1426590666#iefix') format('embedded-opentype'), url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.woff?1426590666') format('woff'), url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.ttf?1426590666') format('truetype'), url('../fonts/../fonts/BilboSwashCaps-Regular-webfont.svg?1426590666') format('svg'); }
-@font-face { font-family: "Imprima-Regular"; src: url('../fonts/../fonts/Imprima-Regular-webfont.eot?1426590666'); src: url('../fonts/../fonts/Imprima-Regular-webfont.eot?&1426590666#iefix') format('embedded-opentype'), url('../fonts/../fonts/Imprima-Regular-webfont.woff?1426590666') format('woff'), url('../fonts/../fonts/Imprima-Regular-webfont.ttf?1426590666') format('truetype'), url('../fonts/../fonts/Imprima-Regular-webfont.svg?1426590666') format('svg'); }
-/* line 7, ../sass/style.scss */
-* { box-sizing: border-box; }
+.tinted {
+  background: #EAE1D2;
+}
 
-/* line 10, ../sass/style.scss */
-body { background: #252525; }
+.header {
+  width: auto;
+  display: inline-block;
+  font-size: 11em;
+  color: #451A1A;
+  font-family: 'Abril Fatface', Georgia, serif;
+  text-align: center;
+  margin: 2rem 0 0.1em 50%;
+  transform: translate(-50%, 0);
+}
 
-/* line 14, ../sass/style.scss */
-.icon-logo { display: inline-block; width: 6em; height: 8em; background: #f24f4f; padding: 0.2em; text-decoration: none; }
-@media screen and (min-width: 768px) { /* line 14, ../sass/style.scss */
-  .icon-logo { width: 9em; height: 12em; } }
-/* line 25, ../sass/style.scss */
-.icon-logo .logo-text { font-family: 'Imprima-Regular'; color: #c2c2c2; font-size: 1em; line-height: 1.25em; font-style: normal; text-align: center; margin: 0.5em 0px 0px 0px; }
-@media screen and (min-width: 768px) { /* line 25, ../sass/style.scss */
-  .icon-logo .logo-text { margin: 1em 0 0 0; } }
-/* line 36, ../sass/style.scss */
-.icon-logo .logo-text_hard { display: inline-block; font-family: 'BilboSwashCaps'; font-size: 2em; margin-top: 0.3em; }
-@media screen and (min-width: 768px) { /* line 36, ../sass/style.scss */
-  .icon-logo .logo-text_hard { font-size: 3em; margin-top: 0.5em; } }
+.subhead {
+  width: auto;
+  display: inline-block;
+  font-size: 4em;
+  color: #451A1A;
+  font-family: 'Abril Fatface', Georgia, serif;
+  text-align: center;
+  margin:0 0 0 50%;
+  transform: translate(-50%, 0);
+}
 
-/* line 49, ../sass/style.scss */
-.container-navigation { float: left; position: fixed; width: 6em; height: 8em; z-index: 10; background: #535353; }
-@media screen and (min-width: 768px) { /* line 49, ../sass/style.scss */
-  .container-navigation { width: 9em; height: 100vh; } }
-/* line 60, ../sass/style.scss */
-.container-navigation_hidden { width: 0em; }
+.signature {
+  display: block;
+  width: auto;
+  margin: 1em 0 0 0;
+  left:50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
 
-/* line 64, ../sass/style.scss */
-.feature-content_list { display: none; width: 100vw; height: 100vh; padding: 1em 0.2em 0 0.2em; }
-@media screen and (min-width: 768px) { /* line 64, ../sass/style.scss */
-  .feature-content_list { display: block; } }
-/* line 72, ../sass/style.scss */
-.feature-content_list .list-item { font-family: 'Imprima-Regular'; color: #c2c2c2; font-size: 0.9em; padding: 0.2em 0 0.2em 0; margin: 1em 0.2em; }
-/* line 78, ../sass/style.scss */
-.feature-content_list .list-item a { color: #c2c2c2; line-height: 1.2em; text-decoration: none; }
-/* line 85, ../sass/style.scss */
-.feature-content_list .list-item a:hover { text-decoration: underline; }
+.signature-line {
+  stroke-dasharray: 1583;
+  animation: signatureWrite 3s infinite linear;
+  -webkit-animation: signatureWrite 3s infinite linear;
+}
 
-/* line 93, ../sass/style.scss */
-.container-article_main { display: inline-block; float: left; padding: 2em; width: 100%; height: 100%; }
-@media screen and (min-width: 768px) { /* line 93, ../sass/style.scss */
-  .container-article_main { margin-left: 9em; padding: 1em; width: auto; } }
-@media screen and (min-width: 1024px) { /* line 93, ../sass/style.scss */
-  .container-article_main { margin-left: 9em; width: 57%; padding: 1em; } }
-/* line 110, ../sass/style.scss */
-.container-article_secondary { display: inline-block; float: left; padding: 2em; width: 100%; }
-@media screen and (min-width: 768px) { /* line 110, ../sass/style.scss */
-  .container-article_secondary { padding: 1em; width: auto; margin-left: 9em; } }
-@media screen and (min-width: 1024px) { /* line 110, ../sass/style.scss */
-  .container-article_secondary { width: 28%; float: right; padding: 1em; margin-left: 0; } }
+.reference {
+  position: relative;
+}
 
-/* line 128, ../sass/style.scss */
-.article-feature { display: inline-block; width: 100%; position: relative; }
-@media screen and (min-width: 768px) { /* line 128, ../sass/style.scss */
-  .article-feature { position: static; } }
-/* line 135, ../sass/style.scss */
-.article-feature .image-container { position: relative; width: 100%; margin: 0 auto; }
-@media screen and (min-width: 768px) { /* line 135, ../sass/style.scss */
-  .article-feature .image-container { display: inline; float: left; width: 8.44594595%; display: inline-block; } }
-/* line 145, ../sass/style.scss */
-.article-feature .image-container .image { width: 50px; position: absolute; left: 50%; transform: translate(-50%, 0); height: auto; display: inline-block; }
-@media screen and (min-width: 768px) { /* line 145, ../sass/style.scss */
-  .article-feature .image-container .image { position: static; width: 100%; left: 0; transform: none; } }
-/* line 161, ../sass/style.scss */
-.article-feature .heading-article a { display: inline-block; float: left; font-family: "BilboSwashCaps"; color: #c2c2c2; font-weight: 400; font-style: normal; text-transform: none; letter-spacing: 1px; border-width: 0px 0px 1px 0px; border-style: solid; padding: 0px 0px 5px 0px; margin: 2em 0 0 1%; vertical-align: baseline; text-decoration: none; font-size: 2em; width: 100%; text-align: center; }
-@media screen and (min-width: 768px) { /* line 161, ../sass/style.scss */
-  .article-feature .heading-article a { margin: 0 0 0 1%; } }
-@media screen and (min-width: 768px) { /* line 161, ../sass/style.scss */
-  .article-feature .heading-article a { font-size: 3em; line-height: 1em; width: 90.5540541%; text-align: left; } }
-@media screen and (min-width: 1024px) { /* line 161, ../sass/style.scss */
-  .article-feature .heading-article a { line-height: 1.25em; } }
-/* line 177, ../sass/style.scss */
-.article-feature .body-article { font-size: 0.9em; line-height: 1.6em; margin: 0 0 1.6em 0; color: #c2c2c2; font-family: 'Imprima-Regular'; font-weight: 400; font-style: normal; }
-@media screen and (min-width: 786px) { /* line 177, ../sass/style.scss */
-  .article-feature .body-article { font-size: 1.25em; } }
+.icon {
+  position: absolute;
+}
 
-/* line 190, ../sass/style.scss */
-.article-blurb { display: inline-block; width: 100%; position: relative; }
-@media screen and (min-width: 768px) { /* line 190, ../sass/style.scss */
-  .article-blurb { width: 49%; position: relative; } }
-@media screen and (min-width: 1024px) { /* line 190, ../sass/style.scss */
-  .article-blurb { width: 100%; color: #000000; } }
-/* line 202, ../sass/style.scss */
-.article-blurb .image-container { position: relative; margin: 0 auto; }
-@media screen and (min-width: 768px) { /* line 202, ../sass/style.scss */
-  .article-blurb .image-container { display: inline; float: left; width: 17.1821306%; display: inline-block; } }
-/* line 211, ../sass/style.scss */
-.article-blurb .image-container .image { width: 50px; position: absolute; left: 50%; transform: translate(-50%, 0); height: auto; display: inline-block; }
-@media screen and (min-width: 768px) { /* line 211, ../sass/style.scss */
-  .article-blurb .image-container .image { position: static; width: 100%; left: 0; transform: none; } }
-/* line 227, ../sass/style.scss */
-.article-blurb .heading-article a { display: inline-block; float: left; font-family: "BilboSwashCaps"; color: #c2c2c2; font-weight: 400; font-style: normal; text-transform: none; letter-spacing: 1px; border-width: 0px 0px 1px 0px; border-style: solid; padding: 0px 0px 5px 0px; margin: 2em 0 0 1%; vertical-align: baseline; text-decoration: none; font-size: 2em; width: 100%; text-align: center; height: auto; display: inline-block; }
-@media screen and (min-width: 768px) { /* line 227, ../sass/style.scss */
-  .article-blurb .heading-article a { margin: 0 0 0 1%; } }
-@media screen and (min-width: 768px) { /* line 227, ../sass/style.scss */
-  .article-blurb .heading-article a { font-size: 2.375em; line-height: 0.98958333em; width: 81.818%; text-align: left; } }
-/* line 242, ../sass/style.scss */
-.article-blurb .body-article { font-size: 0.9em; line-height: 1.5em; margin: 0 0 1.5em 0; color: #c2c2c2; font-family: 'Imprima-Regular'; font-weight: 400; font-style: normal; }
-@media screen and (min-width: 768px) { /* line 242, ../sass/style.scss */
-  .article-blurb .body-article { font-size: 0.9em; } }
+#s-top {
+  top: 1.2rem;
+  left: 0;
+}
+#s-bottom {
+  bottom:1.1rem;
+  left: 4.8rem;
+}
+#v-horizontal {
+  top: 1.9rem;
+  left: 11rem;
+}
+#v-vertical {
+  top: 1.3rem;
+  left: 13.5rem;
+}
+#g-top {
+  top:1.6rem;
+  right:1.4rem;
+}
+#g-bottom {
+  bottom: 0.6rem;
+  right: 4rem;
+}
 
-/* line 257, ../sass/style.scss */
-.text-main_centered { display: inline-block; font-family: 'Imprima-Regular'; color: #f24f4f; text-align: center; width: 100%; border-bottom: 1px solid #f24f4f; margin: 0 auto 1em auto; padding: 0 0 .5em 0; }
+@keyframes signatureWrite {
+  0% {
+    stroke-dashoffset: 1583;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
-/* line 267, ../sass/style.scss */
-.text-secondary_centered { display: inline-block; font-family: 'Imprima-Regular'; color: #f24f4f; text-align: center; width: 100%; border-bottom: 1px solid #f24f4f; margin: 0 auto 1em auto; padding: 0 0 .5em 0; }
-
-/* line 277, ../sass/style.scss */
-time { position: absolute; top: 55px; left: 50%; transform: translate(-50%, 0); color: #c2c2c2; font-size: .5em; text-transform: uppercase; }
-@media screen and (min-width: 768px) { /* line 277, ../sass/style.scss */
-  time { float: left; display: block; margin: 0 0 0 1%; position: static; top: 0; left: 0; transform: none; } }
+@-webkit-keyframes signatureWrite {
+  0% {
+    stroke-dashoffset: 1583;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

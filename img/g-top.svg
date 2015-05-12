@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="9px" viewBox="0 0 64 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M31.5,7 C33.4329966,7 35,5.43299662 35,3.5 C35,1.56700338 33.4329966,0 31.5,0 C29.5670034,0 28,1.56700338 28,3.5 C28,5.43299662 29.5670034,7 31.5,7 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+            <path d="M2,2 L27.2278804,2.74436837" id="G-top-left-bar" stroke="#282727" sketch:type="MSShapeGroup"></path>
+            <path d="M35,3 L60.2278804,3.74436837" id="G-top-right-bar" stroke="#282727" sketch:type="MSShapeGroup"></path>
+            <circle id="G-top-left-dot" fill="#282727" sketch:type="MSShapeGroup" cx="2" cy="2" r="2"></circle>
+            <circle id="G-top-right-dot" fill="#282727" sketch:type="MSShapeGroup" cx="62" cy="4" r="2"></circle>
+            <g id="G-top-anchor">
+                <use stroke="none" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use stroke="#282727" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

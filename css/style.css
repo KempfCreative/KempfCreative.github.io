@@ -127,6 +127,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin:0 auto;
 }
 
-.optimized path {
+path {
   fill: red;
 }

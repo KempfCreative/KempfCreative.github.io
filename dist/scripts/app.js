@@ -83,9 +83,11 @@ var FetchData = function FetchData() {
         var urlPath = undefined !== optionalId && optionalId.length > 0 ? '' + url + optionalId + '.json' : url;
         var xhr = new XMLHttpRequest();
         xhr.addEventListener('load', function (event) {
-          resolve(this.responseText);
+          console.log(this);
+          resolve(this.response);
         });
         xhr.open('GET', urlPath);
+        xhr.responseType = 'json';
         xhr.send();
       });
     }
@@ -122,21 +124,22 @@ var _renderHtml2 = _interopRequireDefault(_renderHtml);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _topStories2.default.storyArray().then(function (topStoryIds) {
-    console.log(topStoryIds);
+    // console.log( topStoryIds );
     var storyBodiesPromise = _storyBody2.default.getStoryBody(topStoryIds);
-    console.log(storyBodiesPromise);
+    // console.log( storyBodiesPromise );
     storyBodiesPromise.then(function (topStoryBodies) {
-        console.log(topStoryBodies);
+        // console.log( topStoryBodies );
         topStoryBodies.forEach(function (response) {
-            return _storyBody2.default.setStoryData(JSON.parse(response));
+            // console.log(response);
+            return _storyBody2.default.setStoryData(response);
         });
         return _storyBody2.default.storyData;
     }).then(function (storyObjectArray) {
         var authorBodiesPromise = _authorInfo2.default.getAuthorInfo(storyObjectArray);
-        console.log(authorBodiesPromise);
+        // console.log(authorBodiesPromise);
         authorBodiesPromise.then(function (topStoryBodiesWithAuthor) {
             topStoryBodiesWithAuthor.forEach(function (response, index) {
-                return _authorInfo2.default.setAuthorInfo(storyObjectArray[index], JSON.parse(response));
+                return _authorInfo2.default.setAuthorInfo(storyObjectArray[index], response);
             });
             return _authorInfo2.default.authorData;
         }).then(function (fullStoryObject) {
@@ -144,7 +147,7 @@ _topStories2.default.storyArray().then(function (topStoryIds) {
                 return b.score - a.score;
             });
         }).then(function (sortedStories) {
-            console.log(sortedStories);
+            // console.log( sortedStories );
             var storiesString = _renderHtml2.default.parseObjects(sortedStories);
             document.getElementById('news-main').innerHTML = storiesString;
         });
@@ -238,7 +241,7 @@ var RenderHtml = function RenderHtml() {
 				var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
 				return time;
 			}
-			var storyDomString = '\n\t\t\t\t<article class="story-item story-' + index + '">\n\t\t\t\t\t<span class="story-score">' + storyObject.score + '</span>\n\t\t\t\t\t<a href="' + storyObject.url + '" title="' + storyObject.title + '" class="story-link">\n\t\t\t\t\t\t<h2 class="story-title">' + storyObject.title + '</h2>\n\t\t\t\t\t</a>\n\t\t\t\t\t<time class="story-published-time" datetime="' + new Date(storyObject.time * 1000) + '">' + timeConverter(storyObject.time) + '</time>\n\t\t\t\t\t<div class="author">\n\t\t\t\t\t\tSubmitted by:\n\t\t\t\t\t\t<span class="author-id">' + storyObject.by.id + '</span>\n\t\t\t\t\t\t<span class="author-karma">' + storyObject.by.karma + '</span>\n\t\t\t\t\t</div>\n\t\t\t\t</article>\n\t\t\t';
+			var storyDomString = '\n\t\t\t\t<article class="story-item story-' + index + '">\n\t\t\t\t\t<span class="story-score">' + storyObject.score + '</span>\n\t\t\t\t\t<a href="' + storyObject.url + '" title="' + storyObject.title + '" class="story-link">\n\t\t\t\t\t\t<h2 class="story-title">' + storyObject.title + '</h2>\n\t\t\t\t\t</a>\n\t\t\t\t\t<time class="story-published-time" datetime="' + new Date(storyObject.time * 1000) + '">' + timeConverter(storyObject.time) + '</time>\n\t\t\t\t\t<div class="author">\n\t\t\t\t\t\tSubmitted by:\n\t\t\t\t\t\t<a href="https://news.ycombinator.com/user?id=' + storyObject.by.id + '">\n\t\t\t\t\t\t\t<span class="author-id">' + storyObject.by.id + '</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<span class="author-karma">' + storyObject.by.karma + '</span>\n\t\t\t\t\t</div>\n\t\t\t\t</article>\n\t\t\t';
 			return renderHtml.returnHtml += storyDomString;
 		},
 		returnHtml: function () {
@@ -321,7 +324,7 @@ var TopStories = function TopStories() {
   var topStories = {
     storyArray: function storyArray() {
       return _fetchData2.default.get('https://hacker-news.firebaseio.com/v0/topstories.json').then(function (response) {
-        var topStoriesArray = response.slice(1, response.length - 1).split(',');
+        var topStoriesArray = response;
         var topTen = void 0,
             topTenObj = {};
         // Pick out 10 random numbers 0 - response.length-1

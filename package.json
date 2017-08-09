@@ -1,0 +1,41 @@
+{
+  "name": "hacker-news-view",
+  "version": "0.0.1",
+  "description": "A fun way to look at top stories from Hacker News!",
+  "main": "index.js",
+  "directories": {
+    "src": "Main development directory",
+    "dist": "Bundled code directory"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/webpack",
+    "start": "node_modules/.bin/webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KempfCreative/hacker-news-view.git"
+  },
+  "keywords": [
+    "news",
+    "api",
+    "layout"
+  ],
+  "author": "Jonathan Kempf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KempfCreative/hacker-news-view/issues"
+  },
+  "homepage": "https://github.com/KempfCreative/hacker-news-view#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

@@ -92,6 +92,15 @@ p {
   text-decoration: none;
   display: inline-block; }
 
+.comments-link {
+  display: block;
+  color: #FFF;
+  font-size: 0.8rem;
+  padding: 0.5rem 0 0.5rem; }
+
+.comment-text {
+  font-size: 1.1rem; }
+
 .story-title {
   color: #00ffdb;
   line-height: 1.2em;

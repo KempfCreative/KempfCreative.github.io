@@ -90,7 +90,8 @@ p {
 
 .story-link {
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
 
 .comments-link {
   display: block;
